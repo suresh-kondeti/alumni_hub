@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide any Bolt-related elements */
+[data-bolt], 
+.bolt-bubble,
+.bolt-chat,
+.bolt-overlay,
+[class*="bolt-"],
+[id*="bolt-"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ensure clean interface */
+body {
+  overflow-x: hidden;
+}
+
+/* Remove any floating elements that might be Bolt-related */
+div[style*="position: fixed"][style*="z-index"] {
+  display: none !important;
+}

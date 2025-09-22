@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    min-height: 100vh;
+}
+
+/* Login Page */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-container .card {
+    border: none;
+    border-radius: 15px;
+}
+
+.login-container .card-header {
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+/* Dashboard Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Statistics Cards */
+.card.bg-primary, .card.bg-success, .card.bg-info, 
+.card.bg-warning, .card.bg-danger, .card.bg-dark {
+    border: none;
+    color: white;
+}
+
+.card.bg-primary h3, .card.bg-primary h5,
+.card.bg-success h3, .card.bg-success h5,
+.card.bg-info h3, .card.bg-info h5,
+.card.bg-warning h3, .card.bg-warning h5,
+.card.bg-danger h3, .card.bg-danger h5,
+.card.bg-dark h3, .card.bg-dark h5 {
+    margin-bottom: 0;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+}
+
+/* Alumni Cards */
+.alumni-card .card {
+    transition: all 0.3s ease;
+}
+
+.alumni-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Chart containers */
+canvas {
+    max-height: 300px !important;
+}
+
+/* Map container */
+#alumniMap {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Modal improvements */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+}
+
+/* Alert improvements */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* List group improvements */
+.list-group-item {
+    border-radius: 6px !important;
+    margin-bottom: 5px;
+    border: 1px solid #dee2e6 !important;
+}
+
+/* Badge improvements */
+.badge {
+    font-size: 0.85rem;
+}
+
+/* Loading states */
+.btn:disabled {
+    opacity: 0.6;
+}
+
+/* Switch toggle improvements */
+.form-check-input:checked {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
